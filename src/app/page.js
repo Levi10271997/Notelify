@@ -12,8 +12,8 @@ export default function Home() {
           <div className="col-headings">
             <div className="appLogo">Notelify</div>
           </div>
-          <SidebarMenuListItem leftIcon={homeIcon} title={"All Notes"}/>
-           <SidebarMenuListItem leftIcon={homeIcon} title={"Archived Notes"}/>
+          <SidebarMenuListItem leftIcon={"home"} title={"All Notes"}/>
+           <SidebarMenuListItem leftIcon={"home"} title={"Archived Notes"}/>
         </div>
         <div className="Dashboard-right">
          <div className="col-headings">
