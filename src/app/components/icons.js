@@ -1,16 +1,21 @@
 import React from 'react';
-import { FaHome, FaUser, FaCog, FaQuestion } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp, faSearch, faHouse, faBoxArchive, faTag, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const LocalIcons = ({ iconName }) => {
   switch (iconName) {
     case 'home':
-      return <FaHome />;
-    case 'user':
-      return <FaUser />;
-    case 'settings':
-      return <FaCog />;
+      return  <FontAwesomeIcon icon={faHouse} />;
+    case 'archive':
+      return  <FontAwesomeIcon icon={faBoxArchive} />;
+    case 'tag':
+      return <FontAwesomeIcon icon={faTag} />;
+    case 'chevronRight':
+        return <FontAwesomeIcon icon={faChevronRight} />;
+    case 'search':
+        return <FontAwesomeIcon icon={faSearch} />;
     default:
-      return <FaQuestion />; // fallback icon
+      return <FontAwesomeIcon icon={faThumbsUp} />; // fallback icon
   }
 };
 

@@ -4,3 +4,7 @@
 .sidebarMenuItem{
     @apply bg-transparent list-none py-1.5 px-3 rounded-md transition-all duration-300 flex items-center justify-between hover:bg-site_lightGray cursor-pointer;
 }
+
+.listIcon{
+    @apply w-[15px];
+}

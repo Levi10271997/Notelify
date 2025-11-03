@@ -11,14 +11,18 @@ body {
 
 
 .Dashboard-left{
-  @apply w-[300px] bg-red-300 px-3.5 border-r border-solid border-s-outlineGray;
+  @apply w-[300px]  px-3.5 border-r border-solid border-s-outlineGray;
 }
 .Dashboard-right{
-  @apply flex-1 bg-blue-300;
+  @apply flex-1;
 }
 .col-headings{
   @apply h-14 flex items-center;
 }
 .appLogo{
   @apply text-xl font-bold;
+}
+
+.horizontalBar{
+  @apply w-full h-px bg-outlineGray my-2.5;
 }
