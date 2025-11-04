@@ -2,6 +2,7 @@ import Image from "next/image";
 import { SidebarMenuListItem } from "./components/sidebarMenus";
 import homeIcon from "./assets/home-black.svg";
 import LocalIcons from "./components/icons";
+import NotesItem from "./components/noteslistItem";
 
 
 export default function Home() {
@@ -31,8 +32,8 @@ export default function Home() {
            </div>
         </div>
         <div className="Dashboard-right">
-         <div className="col-headings">
-           <div className="flex flex-row justify-between">
+         <div className="col-headings border-b border-solid border-outlineGray">
+           <div className="flex flex-row items-center justify-between w-full px-3.5">
              <p>All Notes</p>
             <div className="flex gap-2">
               <div className="searchInput">
@@ -40,13 +41,47 @@ export default function Home() {
                      <LocalIcons iconName={'search'}/>
                 </div>
              
-                <input type="text" placeholder="Search notes..." />
+                <input type="text" className="min-w-[250px]" placeholder="Search by title, content or tags..."/>
               </div>
+              <button className="w-3.5">
+                <LocalIcons iconName={'gear'}/>
+              </button>
               
             </div>
            </div>
           </div>
-          <div className="horizontalBar"></div>
+         
+          <div className="notesDashboardContent">
+              <div className="notesSelect">
+                  <button className="createNoteBtn mb-2.5">
+                    <div className="w-2.5">
+                        <LocalIcons iconName={'plus'}/>
+                    </div>
+                    Create Note
+                  </button>
+                  <div className="notesList">
+                   <NotesItem />
+                    <NotesItem />
+                  </div>
+              </div>
+              <div className="flex-1 notesContent">
+                  notes content here
+              </div>
+              <div className="notesActions">
+                <div className="actionButtons">
+                 <div className="w-2.5">
+                   <LocalIcons iconName={"archive"}/>
+                 </div>
+                  Archive Notes
+                </div>
+                 <div className="actionButtons">
+                 <div className="w-2.5">
+                   <LocalIcons iconName={"trash"}/>
+                 </div>
+                  Archive Notes
+                </div>
+              </div>
+          </div>
         </div>
 
        </div>

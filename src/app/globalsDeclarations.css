@@ -3,6 +3,7 @@
   --foreground: #171717;
   --darkGray:#e2e2e5;
   --lightGray:#f4f4f8;
+  --blueviolet:#325dfd;
 }
 
 
@@ -11,6 +12,7 @@
   --color-foreground: var(--foreground);
   --color-outlineGray:var(--darkGray);
   --color-site_lightGray:var(--lightGray);
+  --color-site_blueviolet:var(--blueviolet);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

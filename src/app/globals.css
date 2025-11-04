@@ -26,3 +26,10 @@ body {
 .horizontalBar{
   @apply w-full h-px bg-outlineGray my-2.5;
 }
+
+.searchInput{
+  @apply flex gap-1.5 items-center rounded-md p-2.5 border border-solid border-outlineGray ;
+}
+.searchInput input{
+  @apply bg-transparent outline-none border-none;
+}

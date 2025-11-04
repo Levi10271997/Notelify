@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faSearch, faHouse, faBoxArchive, faTag, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp, faSearch, faGear, faHouse,faTrash, faPlus, faBoxArchive, faTag, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const LocalIcons = ({ iconName }) => {
   switch (iconName) {
@@ -14,6 +14,12 @@ const LocalIcons = ({ iconName }) => {
         return <FontAwesomeIcon icon={faChevronRight} />;
     case 'search':
         return <FontAwesomeIcon icon={faSearch} />;
+    case 'gear':
+        return <FontAwesomeIcon icon={faGear} />;
+    case 'plus':
+        return <FontAwesomeIcon icon={faPlus} />;
+     case 'trash':
+        return <FontAwesomeIcon icon={faTrash} />;
     default:
       return <FontAwesomeIcon icon={faThumbsUp} />; // fallback icon
   }
