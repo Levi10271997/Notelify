@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <main>
-       <div className="flex flex-row">
+       <div className="flex flex-row h-screen">
         <div className="Dashboard-left">
           <div className="col-headings">
             <div className="appLogo">Notelify</div>
@@ -65,7 +65,34 @@ export default function Home() {
                   </div>
               </div>
               <div className="flex-1 notesContent">
-                  notes content here
+                 <div className="notesTitleBlock">
+                    <h2 className="selectednotesTitle">
+                      Title Note
+                    </h2>
+                    <div className="selectednotesTags">
+                      <div className="flex items-center gap-2 w-[150px]">
+                        <div className="w-2.5">
+                          <LocalIcons iconName={'tag'}/>
+                        </div>
+                        Tags
+                        </div>
+                    <div className="tags flex items-center gap-2">
+                      <span>Dev</span>, 
+                      <span>React</span>
+                    </div> 
+                    </div>
+
+                    <div className="selectedNotesLastEdited">
+                      <div className="flex items-center gap-2 w-[150px]">
+                        <div className="w-2.5">
+                          <LocalIcons iconName={'clock'}/>
+                        </div>
+                        Last Edited
+                        </div>
+                      <div className="lastEditedDate">29 Oct 2024</div>
+                    </div>
+
+                 </div>
               </div>
               <div className="notesActions">
                 <div className="actionButtons">
@@ -78,7 +105,7 @@ export default function Home() {
                  <div className="w-2.5">
                    <LocalIcons iconName={"trash"}/>
                  </div>
-                  Archive Notes
+                  Delete Notes
                 </div>
               </div>
           </div>

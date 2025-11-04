@@ -3,7 +3,7 @@
 
 
 .notesDashboardContent{
-    @apply flex flex-row items-start;
+    @apply flex flex-row items-start h-full;
 }
 
 .notesActions,
@@ -12,7 +12,7 @@
 }
 
 .notesContent{
-    @apply border-l border-r border-outlineGray pt-2 flex-1 px-2.5;
+    @apply border-l border-r border-outlineGray pt-2 flex-1 px-2.5 h-full;
 }
 .notesSelect{
     @apply pt-2 pr-2 pb-2 pl-3.5;
@@ -58,5 +58,10 @@
 }
 
 .actionButtons{
-    @apply flex items-center flex-row gap-2 rounded-md mb-2 border border-solid border-outlineGray;
+    @apply flex items-center flex-row gap-2 rounded-md mb-2 border border-solid border-outlineGray p-2.5;
+}
+
+.selectednotesTags,
+.selectedNotesLastEdited{
+    @apply flex flex-row items-center gap-2.5;
 }
