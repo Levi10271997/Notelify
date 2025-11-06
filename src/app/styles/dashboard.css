@@ -65,3 +65,18 @@
 .selectedNotesLastEdited{
     @apply flex flex-row items-center gap-2.5;
 }
+.notesTitleBlock{
+    @apply pb-4 border-b border-solid border-outlineGray;
+}
+
+.selectednotesTitle{
+    @apply text-2xl font-bold;
+}
+
+.notesTextarea{
+    @apply w-full text-sm h-full overflow-auto resize-none box-border p-2.5 outline-none;
+}
+
+.notesContentArea{
+    @apply h-full w-full;
+}

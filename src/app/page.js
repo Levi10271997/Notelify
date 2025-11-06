@@ -93,6 +93,11 @@ export default function Home() {
                     </div>
 
                  </div>
+
+<div className="notesContentArea">
+  <textarea className="notesTextarea"/>
+</div>
+
               </div>
               <div className="notesActions">
                 <div className="actionButtons">
